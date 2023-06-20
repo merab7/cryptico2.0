@@ -20,7 +20,7 @@ function Header() {
       </div>
 
       <div>
-        <div className="dropdown dropdown-end lg:hidden opacity-1 mr-9 ">
+        <div className="dropdown dropdown-end lg:hidden opacity-1 mr-9 bg-gray-800 text-white ">
           <label tabIndex={0} className="btn m-1 text-white shadow-md shadow-blue-400  " onClick={toggleDropdown}>
             Menu
           </label>
