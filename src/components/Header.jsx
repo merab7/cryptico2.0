@@ -12,7 +12,7 @@ function Header() {
   }
 
   return (
-    <section className="  fixed navbar bg-base-100 top-0 right-0 left-0 p-5 flex flex-row justify-between  z-50  "  >
+    <section className="  fixed navbar  top-0 right-0 left-0 p-5 flex flex-row justify-between  z-50 bg-gray-800 text-white  "  >
       <div className="flex" >
       <Link to="/">
         <Lottie className="w-24  mt-1 cursor-pointer" animationData={animationData} />
@@ -49,7 +49,7 @@ function Header() {
         </div>
       </div>
 
-      <div className=" hidden lg:flex flex-row gap-5  font-bold pr-5 pt-5 text-lg transition-colors ">
+      <div className=" hidden lg:flex flex-row gap-5  font-bold pr-5 pt-5 text-lg transition-colors bg-gray-800 text-white  ">
       <Link to=".">
        <button className="  btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">Home</button>
        </Link>

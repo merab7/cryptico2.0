@@ -3,7 +3,7 @@ import {FaLinkedin, FaGithubSquare } from "react-icons/fa"
  
  function Footer (){
     return(
-<footer className="  p-5 footer footer-center   bg-gray-800 text-base-content rounded ">
+<footer className="  p-5 footer footer-center text-white   bg-gray-800  rounded ">
   <div className="grid grid-flow-col gap-4">
   <Link to=".">
   <button >Home</button>
