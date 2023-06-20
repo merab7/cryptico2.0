@@ -8,15 +8,11 @@ import {FaLinkedin, FaGithubSquare } from "react-icons/fa"
   <Link to=".">
   <button >Home</button>
  </Link>
- <Link to="live">
-  <button >Stats</button>
-   </Link>
+
    <Link to="cryptoccurrencies">
    <button>Cryptoccurrencies</button>
   </Link>
-  <Link to="exchanges">
-   <button>Exchanes</button>
-  </Link>
+ 
   <Link to="news">
    <button>News</button>
   </Link>

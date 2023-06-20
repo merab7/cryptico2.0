@@ -36,6 +36,36 @@
     gap: 40px;
 }
 
+.chart-header {
+    margin-bottom: 1rem;
+  }
+  
+  .chart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .price-change {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .current-price {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+
+
 
 @tailwind base;
 @tailwind components;

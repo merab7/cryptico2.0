@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import { Cryptoccurrencies, Exchanges, News, Live, Cryptodetails } from "./components";
+import { Cryptoccurrencies,  News, Live, Cryptodetails } from "./components";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
         <Route path="/" element={<Layout />} >
           <Route path="/" element={<Live />} />
           <Route path="cryptoccurrencies" element={<Cryptoccurrencies />} />
-          <Route path="exchanges" element={<Exchanges />} />
           <Route path="news" element={<News />} />
           <Route path="coin/:coinId" element={<Cryptodetails />} />
         </Route>

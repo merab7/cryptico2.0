@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import picture from '../assets/lottie.json';
-import { Link } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 import Lottie from "lottie-react"
 import animationData from '../assets/lottie.json'
 
@@ -40,12 +40,6 @@ function Header() {
               </Link>
             </li>
             
-            
-            <li>
-            <Link to="exchanges">
-              <button>Exchanges</button>
-              </Link>
-            </li>
             <li>
             <Link to="news">
               <button>News</button>
@@ -61,9 +55,6 @@ function Header() {
        </Link>
        <Link to="cryptoccurrencies">
         <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400   ">cryptocurrencies</button>
-        </Link>
-        <Link to="exchanges">
-        <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">Exchanges</button>
         </Link>
         <Link to="news">
         <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">News</button>

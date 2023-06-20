@@ -111,7 +111,7 @@ const Cryptodetails = () => {
         <h1 className='pb-5  text-blue-700 font-bold text-2xl cursor-pointer ' > What is {cryptoDetails.name} </h1>
         <p className='text-black text-xl  ' >{HTMLReactParser(cryptoDetails.description)}</p>
       </div>
-       <div className='mt-24 ml-9 w-96 md:ml-96 cursor-pointer '>
+       <div className='mt-24 ml-4 p-5 w-96 md:ml-96 cursor-pointer -mb-64 '>
         <h1  className='pb-5  text-blue-700 font-bold text-2xl cursor-pointer '   >{cryptoDetails.name}Links</h1>
         {cryptoDetails.links.map((link)=>(
             <div  key={link.name}  >

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Col, Row, Typography } from 'antd';
+import 'chart.js/auto';
+import { Typography } from 'antd';
 
 const { Title } = Typography;
 
@@ -15,6 +16,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
     coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString());
   }
+
   const data = {
     labels: coinTimestamp,
     datasets: [
@@ -41,16 +43,17 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   };
 
   return (
-    <>
-      <Row className="chart-header">
-        <Title level={2} className="chart-title">{coinName} Price Chart </Title>
-        <Col className="price-container">
-          <Title level={5} className="price-change">Change: {coinHistory?.data?.change}%</Title>
-          <Title level={5} className="current-price">Current {coinName} Price: $ {currentPrice}</Title>
-        </Col>
-      </Row>
-      <Line data={data} options={options} />
-    </>
+    <div className="flex flex-col  lg:w-full items-center justify-center -ml-9 p-5 w-96 ">
+      <div className="text-center flex flex-col lg:flex-row  items-center  lg:gap-96    mb-4">
+        <Title level={5}>{coinName} Price Chart</Title>
+        <Title level={5} className="mb-1">Change: {coinHistory?.data?.change}%</Title>
+        <Title level={5}>Current {coinName} Price: $ {currentPrice}</Title>
+      </div>
+      
+ 
+        <Line data={data} options={options} />
+      
+    </div>
   );
 };
 
