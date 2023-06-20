@@ -21,12 +21,12 @@ function Header() {
 
       <div>
         <div className="dropdown dropdown-end lg:hidden opacity-1 mr-9 bg-gray-800 text-white ">
-          <label tabIndex={0} className="btn m-1 bg-gray-900 text-white shadow-md shadow-blue-400  " onClick={toggleDropdown}>
+          <label tabIndex={0} className="btn m-1 bg-gray-900  shadow-md shadow-blue-400  " onClick={toggleDropdown}>
             Menu
           </label>
           <ul
             tabIndex={0}
-            className={isOpen ? 'dropdown-content menu p-2 shadow bg-base-100 rounded-box w-40  ' : 'hidden'}
+            className={isOpen ? 'dropdown-content menu p-2 shadow bg-gray-800 text-white rounded-box w-40  ' : 'hidden'}
           >
              <li>
              <Link to=".">
