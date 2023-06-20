@@ -1,3 +1,41 @@
+.select-timeperiod{
+    width: 200px !important;
+    margin-top: 20px !important;
+}
+.select-news{
+    width: 300px;
+    padding: 5px
+}
+.stats{
+    font-weight: 800;
+}
+.coin-stats-name{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+}
+.coin-stats{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 20px;
+
+}
+.stats-container h2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--pink);
+}
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
 
 @tailwind base;
 @tailwind components;

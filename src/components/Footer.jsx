@@ -17,7 +17,7 @@ import {FaLinkedin, FaGithubSquare } from "react-icons/fa"
   <Link to="exchanges">
    <button>Exchanes</button>
   </Link>
-  <Link to="News">
+  <Link to="news">
    <button>News</button>
   </Link>
   </div> 

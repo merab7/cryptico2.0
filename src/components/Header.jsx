@@ -20,7 +20,7 @@ function Header() {
       </div>
 
       <div>
-        <div className="dropdown dropdown-end lg:hidden opacity-1 ">
+        <div className="dropdown dropdown-end lg:hidden opacity-1 mr-9 ">
           <label tabIndex={0} className="btn m-1 text-white shadow-md shadow-blue-400  " onClick={toggleDropdown}>
             Menu
           </label>
@@ -39,14 +39,16 @@ function Header() {
               <button>cryptoccurrencies</button>
               </Link>
             </li>
-            <li>
-            <Link to="live" >
-              <button>Stats</button>
-              </Link>
-            </li>
+            
+            
             <li>
             <Link to="exchanges">
               <button>Exchanges</button>
+              </Link>
+            </li>
+            <li>
+            <Link to="news">
+              <button>News</button>
               </Link>
             </li>
           </ul>
@@ -60,11 +62,11 @@ function Header() {
        <Link to="cryptoccurrencies">
         <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400   ">cryptocurrencies</button>
         </Link>
-        <Link to="live">
-        <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">Stats</button>
-        </Link>
         <Link to="exchanges">
         <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">Exchanges</button>
+        </Link>
+        <Link to="news">
+        <button className="   btn btn-outline cursor-pointer shadow-md shadow-blue-400  ">News</button>
         </Link>
       </div>
     </section>

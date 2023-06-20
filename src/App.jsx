@@ -1,25 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import { Cryptoccurrencies, Exchanges, News, Live, Cryptodetails } from "./components";
 
-import {Routes, Route, Link} from "react-router-dom"
-import Layout from "./components/Layout"
-import {Landing, Cryptoccurrencies, Exchanges, News, Live } from "./components"
 function App() {
   return (
-    <>
-    
-     <main>
-      <Routes >
-      <Route path="/" element={<Landing/>}/>
-        <Route element={<Layout/>} >
-        <Route path="live" element={<Live/>}/>
-        <Route path="cryptoccurrencies" element={<Cryptoccurrencies/>} />
-        <Route path="exchanges" element={<Exchanges/>} />
-        <Route path="news" element={<News/>} />
+    <main>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route path="/" element={<Live />} />
+          <Route path="cryptoccurrencies" element={<Cryptoccurrencies />} />
+          <Route path="exchanges" element={<Exchanges />} />
+          <Route path="news" element={<News />} />
+          <Route path="coin/:coinId" element={<Cryptodetails />} />
         </Route>
-        
       </Routes>
-     </main>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
